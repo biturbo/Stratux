@@ -53,7 +53,6 @@ rm -rf /root/librtlsdr
 git clone https://github.com/jpoirier/librtlsdr /root/librtlsdr
 mkdir -p /root/librtlsdr/build
 cd /root/librtlsdr/build && cmake .. && make && make install && ldconfig
-chroot mnt/ 'cd /root/librtlsdr/build && cmake ../ && make && make install && ldconfig'
 
 # Compile stratux
 cd /root/stratux
